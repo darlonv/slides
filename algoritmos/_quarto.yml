@@ -1,0 +1,30 @@
+project:
+  type: website
+
+website:
+  title: "Algoritmos e Estruturas de Dados"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Slides
+      - about.qmd
+  sidebar:
+    style: "docked"
+    contents:
+      - section: "Basico"
+        contents:
+          - about.qmd
+          - 02-Basicos/08-Representacao_de_algoritmos.qmd
+          - 02-Basicos/09-Blocos.qmd
+          - section: "Exercicios"
+            contents:
+              - 02-Basicos/Exercicios/07-Expressoes-exercicios.md
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

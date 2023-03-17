@@ -1,0 +1,5 @@
+---
+title: "Sobre"
+---
+
+Slides desenvolvidos com base no material disponibilizado em [Algoritmos e Estruturas de Dados](https://darlonv.github.io/algoritmos).

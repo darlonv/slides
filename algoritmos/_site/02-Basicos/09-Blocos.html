@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="exercicios_files/libs/clipboard/clipboard.min.js"></script>
-<script src="exercicios_files/libs/quarto-html/tabby.min.js"></script>
-<script src="exercicios_files/libs/quarto-html/popper.min.js"></script>
-<script src="exercicios_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="exercicios_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="exercicios_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="exercicios_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.335">
 
   <meta name="author" content="Algoritmos e Estruturas de Dados">
-  <title>Expressões</title>
+  <title>Algoritmos e Estruturas de Dados - Blocos</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="exercicios_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="exercicios_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -93,11 +93,11 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="exercicios_files/libs/revealjs/dist/theme/quarto.css" id="theme">
-  <link href="exercicios_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="exercicios_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="exercicios_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="exercicios_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -382,13 +382,16 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Expressões</h1>
+  <h1 class="title">Blocos</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -400,11 +403,16 @@ Algoritmos e Estruturas de Dados
 
 </section>
 <section>
-<section id="expressões" class="title-slide slide level1 center">
-<h1>Expressões</h1>
-<ul>
-<li>Faça um programa que pergunta um número ao usuário, e em seguida mostra o antecessor e o sucessor desse número.</li>
-</ul>
+<section id="blocos-de-código" class="title-slide slide level1 center">
+<h1>Blocos de código</h1>
+<div class="fragment">
+<p>É comum em algoritmos e linguagens de programação a delimitação de trechos de código. A tais delimitações chamamos de bloco.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<p><strong>Exemplo</strong><br>
+O exemplo apresentado abaixo apresenta apenas a estrutura para definição de códigos, ele não faz parte da solução de nenhum problema específico. É apenas a ilustração da subdivisão de um código em blocos.</p>
 </section>
 <section class="slide level2">
 
@@ -412,186 +420,200 @@ Algoritmos e Estruturas de Dados
 <ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Portugol</a></li><li><a href="#tabset-1-2">Java</a></li><li><a href="#tabset-1-3">Python</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource c number-lines code-with-copy"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1"></a>inicio<span class="op">;</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="co">//variaveis</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a>inteiro valor<span class="op">;</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a>inteiro antecessor<span class="op">,</span> sucessor<span class="op">;</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="co">//entrada</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a>escreva<span class="op">(</span><span class="st">"Digite um número: "</span><span class="op">);</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a>leia<span class="op">(</span>valor<span class="op">);</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a></span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="co">//processamento</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a>antecessor <span class="op">=</span> valor <span class="op">-</span><span class="dv">1</span><span class="op">;</span></span>
-<span id="cb1-12"><a href="#cb1-12"></a>sucessor   <span class="op">=</span> valor <span class="op">+</span><span class="dv">1</span></span>
-<span id="cb1-13"><a href="#cb1-13"></a></span>
-<span id="cb1-14"><a href="#cb1-14"></a><span class="co">//saida</span></span>
-<span id="cb1-15"><a href="#cb1-15"></a>escreva<span class="op">(</span><span class="st">"O antecessor de "</span><span class="op">,</span> valor<span class="op">,</span> <span class="st">" é: "</span><span class="op">,</span> antecessor<span class="op">);</span></span>
-<span id="cb1-16"><a href="#cb1-16"></a>escreva<span class="op">(</span><span class="st">"O sucessor de "</span><span class="op">,</span> valor<span class="op">,</span> <span class="st">" é:"</span><span class="op">,</span> sucessor<span class="op">);</span></span>
-<span id="cb1-17"><a href="#cb1-17"></a></span>
-<span id="cb1-18"><a href="#cb1-18"></a>fim<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource c number-lines code-with-copy"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1"></a>início</span>
+<span id="cb1-2"><a href="#cb1-2"></a>  <span class="co">//comando 1</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>  <span class="co">//comando 2</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="co">// highlight-start</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>  início              <span class="co">//&lt;-- Início do bloco</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>      <span class="co">//comando 3</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>      <span class="co">//comando 4</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>      <span class="co">//comando 5</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>  fim<span class="op">;</span>                <span class="co">//&lt;-- Término do bloco</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>  <span class="co">// highlight-end</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a>  <span class="co">// comando 6</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a>  <span class="co">// comando 7</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a>fim<span class="op">.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+<p>Em portugol, os blocos são delimitados pelos operadores <code>início</code> e <code>fim</code>.</p>
+<p>Adaptado de (<a href="https://plataforma.bvirtual.com.br/Leitor/Publicacao/323/pdf/">Forbellone 2022, p.&nbsp;43</a>)</p>
 </div>
 <div id="tabset-1-2">
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource c number-lines code-with-copy"><code class="sourceCode c"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">//Variáveis</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="dt">int</span> valor<span class="op">;</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="dt">int</span> antecessor<span class="op">,</span> sucessor<span class="op">;</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a>Scanner entrada<span class="op">;</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a></span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="co">//Entrada</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a>System<span class="op">.</span>out<span class="op">.</span>println<span class="op">(</span><span class="st">"Digite um número: "</span><span class="op">);</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a>entrada <span class="op">=</span> new Scanner<span class="op">(</span>System<span class="op">.</span>in<span class="op">);</span></span>
-<span id="cb2-9"><a href="#cb2-9"></a>valor <span class="op">=</span> entrada<span class="op">.</span>nextInt<span class="op">();</span></span>
-<span id="cb2-10"><a href="#cb2-10"></a>entrada<span class="op">.</span>close<span class="op">();</span></span>
-<span id="cb2-11"><a href="#cb2-11"></a></span>
-<span id="cb2-12"><a href="#cb2-12"></a><span class="co">//Processamento</span></span>
-<span id="cb2-13"><a href="#cb2-13"></a>antecessor <span class="op">=</span> valor <span class="op">-</span><span class="dv">1</span><span class="op">;</span></span>
-<span id="cb2-14"><a href="#cb2-14"></a>sucessor <span class="op">=</span> valor <span class="op">+</span><span class="dv">1</span><span class="op">;</span></span>
-<span id="cb2-15"><a href="#cb2-15"></a></span>
-<span id="cb2-16"><a href="#cb2-16"></a><span class="co">//Saída</span></span>
-<span id="cb2-17"><a href="#cb2-17"></a>System<span class="op">.</span>out<span class="op">.</span>printf<span class="op">(</span><span class="st">"O antecessor de %d é %d</span><span class="sc">\n</span><span class="st">"</span><span class="op">,</span> valor<span class="op">,</span> antecessor<span class="op">);</span></span>
-<span id="cb2-18"><a href="#cb2-18"></a>System<span class="op">.</span>out<span class="op">.</span>printf<span class="op">(</span><span class="st">"O sucessor de %d é %d</span><span class="sc">\n</span><span class="st">"</span><span class="op">,</span> valor<span class="op">,</span> sucessor<span class="op">);</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource java number-lines code-with-copy"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1"></a><span class="op">{</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a> <span class="co">// comando 1 ;</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a> <span class="co">// comando 2 ;</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a> <span class="co">// highlight-start</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a> <span class="op">{</span>                   <span class="co">//&lt;-- Início do bloco</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a>     <span class="co">// comando 3 ;</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a>     <span class="co">// comando 4 ;</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>     <span class="co">// comando 5 ;</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a> <span class="op">}</span>                   <span class="co">//&lt;-- Término do bloco</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a> <span class="co">// highlight-end</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a> <span class="co">// comando 6 ;</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a> <span class="co">// comando 7 ;</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Em Java, os blocos são delimitados pelas chaves <code>{</code> e <code>}</code>.</p>
 </div>
 <div id="tabset-1-3">
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="co">#Entrada</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="bu">print</span>(<span class="st">'Digite um número'</span>)</span>
-<span id="cb3-3"><a href="#cb3-3"></a>valor <span class="op">=</span> <span class="bu">input</span>()</span>
-<span id="cb3-4"><a href="#cb3-4"></a>valor <span class="op">=</span> <span class="bu">int</span>(valor)</span>
-<span id="cb3-5"><a href="#cb3-5"></a></span>
-<span id="cb3-6"><a href="#cb3-6"></a><span class="co">#Processamento</span></span>
-<span id="cb3-7"><a href="#cb3-7"></a>antecessor <span class="op">=</span> valor <span class="op">-</span><span class="dv">1</span></span>
-<span id="cb3-8"><a href="#cb3-8"></a>sucessor <span class="op">=</span> valor <span class="op">+</span><span class="dv">1</span></span>
-<span id="cb3-9"><a href="#cb3-9"></a></span>
-<span id="cb3-10"><a href="#cb3-10"></a><span class="co">#Saída</span></span>
-<span id="cb3-11"><a href="#cb3-11"></a><span class="bu">print</span>(<span class="ss">f'O antecessor de </span><span class="sc">{</span>valor<span class="sc">}</span><span class="ss"> é </span><span class="sc">{</span>antecessor<span class="sc">}</span><span class="ss">'</span>, )</span>
-<span id="cb3-12"><a href="#cb3-12"></a><span class="bu">print</span>(<span class="ss">f'O sucessor de </span><span class="sc">{</span>valor<span class="sc">}</span><span class="ss"> é </span><span class="sc">{</span>sucessor<span class="sc">}</span><span class="ss">'</span>, )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
- 
-
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>  <span class="co"># comando 1</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>  <span class="co"># comando 2</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a>  <span class="co"># highlight-start</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a>      <span class="co"># comando 3     #&lt;-- Início do bloco</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>      <span class="co"># comando 4</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>      <span class="co"># comando 5     #&lt;-- Término do bloco</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>  <span class="co"># highlight-end</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a>  <span class="co"># comando 6 ;</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>  <span class="co"># comando 7 ;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Em Python, os blocos são definidos pela indentação do código, ou seja, pelo alinhamento no início de cada linha do código. Este alinhamento pode ser feito por caracteres <em>tab</em> ou <em>espaços</em>.</p>
 </div>
 </div>
 </div>
 </section>
 <section class="slide level2">
 
-<ol type="1">
-<li>Faça um programa que pergunta o nome do usuário, e em seguida mostra a frase “Boa tarde” seguida do nome do usuário.</li>
-</ol>
+<p>A ideia é que os blocos agrupem determinadas tarefas dentro do código.</p>
 </section>
 <section class="slide level2">
 
-<ol type="1">
-<li>Pergunte um número ao usuário, e mostre o valor desse número ao cubo.</li>
-</ol>
+<p><strong>Exemplo</strong></p>
+<ul>
+<li>Calcular e mostrar a área e o perímetro de um retângulo, a partir das informações de sua base e altura.</li>
+</ul>
 </section>
 <section class="slide level2">
 
-<ol type="1">
-<li>Pergunte três valores ao usuário, que correspondem às horas, minutos e segundos do horário atual. Calcule quantos segundos se passaram desde 00:00 horas.<br>
-(Adaptado de MENEZES 2019, pg. 72)</li>
-</ol>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Portugol</a></li><li><a href="#tabset-2-2">Java</a></li><li><a href="#tabset-2-3">Python</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource c number-lines code-with-copy"><code class="sourceCode c"><span id="cb4-1"><a href="#cb4-1"></a>início</span>
+<span id="cb4-2"><a href="#cb4-2"></a>  <span class="co">//Variáveis</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>  real<span class="op">:</span> base<span class="op">,</span> altura<span class="op">;</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>  real<span class="op">:</span> area<span class="op">,</span> perimetro<span class="op">;</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a></span>
+<span id="cb4-6"><a href="#cb4-6"></a>  <span class="co">//Entrada</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a>  escreva<span class="op">(</span><span class="st">"Base: "</span><span class="op">);</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a>  leia<span class="op">(</span>base<span class="op">);</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a>  escreva<span class="op">(</span><span class="st">"Altura: "</span><span class="op">);</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a>  leia<span class="op">(</span>altura<span class="op">);</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a></span>
+<span id="cb4-12"><a href="#cb4-12"></a>  <span class="co">//Processamento</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a>  <span class="co">// highlight-start</span></span>
+<span id="cb4-14"><a href="#cb4-14"></a>  início              <span class="co">//&lt;-- Início do bloco</span></span>
+<span id="cb4-15"><a href="#cb4-15"></a>      <span class="co">//Cálculo da área</span></span>
+<span id="cb4-16"><a href="#cb4-16"></a>      area <span class="op">=</span> base <span class="op">*</span> altura<span class="op">;</span></span>
+<span id="cb4-17"><a href="#cb4-17"></a>  fim<span class="op">;</span>                <span class="co">//&lt;-- Término do bloco</span></span>
+<span id="cb4-18"><a href="#cb4-18"></a>  <span class="co">// highlight-end</span></span>
+<span id="cb4-19"><a href="#cb4-19"></a></span>
+<span id="cb4-20"><a href="#cb4-20"></a>  <span class="co">// highlight-start</span></span>
+<span id="cb4-21"><a href="#cb4-21"></a>  início              <span class="co">//&lt;-- Início do bloco</span></span>
+<span id="cb4-22"><a href="#cb4-22"></a>      <span class="co">//Cálculo do perímetro</span></span>
+<span id="cb4-23"><a href="#cb4-23"></a>      area <span class="op">=</span> <span class="op">(</span>base <span class="op">+</span> altura<span class="op">)*</span><span class="dv">2</span><span class="op">;</span></span>
+<span id="cb4-24"><a href="#cb4-24"></a>  fim<span class="op">;</span>                <span class="co">//&lt;-- Término do bloco</span></span>
+<span id="cb4-25"><a href="#cb4-25"></a>  <span class="co">// highlight-end</span></span>
+<span id="cb4-26"><a href="#cb4-26"></a></span>
+<span id="cb4-27"><a href="#cb4-27"></a>  <span class="co">//Saída</span></span>
+<span id="cb4-28"><a href="#cb4-28"></a>  escreva<span class="op">(</span><span class="st">"Área     : "</span><span class="op">,</span> area<span class="op">);</span></span>
+<span id="cb4-29"><a href="#cb4-29"></a>  escreva<span class="op">(</span><span class="st">"Perímetro: "</span><span class="op">,</span> perimetro<span class="op">);</span></span>
+<span id="cb4-30"><a href="#cb4-30"></a>fim<span class="op">.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Adaptado de (<a href="https://plataforma.bvirtual.com.br/Leitor/Publicacao/323/pdf/">Forbellone 2022, p.&nbsp;43</a>)</p>
+</div>
+<div id="tabset-2-2">
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource java number-lines code-with-copy"><code class="sourceCode java"><span id="cb5-1"><a href="#cb5-1"></a><span class="op">{</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a> <span class="co">//Variáveis</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a> <span class="dt">float</span> base<span class="op">,</span> altura<span class="op">;</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a> <span class="dt">float</span> area<span class="op">,</span> perimetro<span class="op">;</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a> <span class="bu">Scanner</span> entrada</span>
+<span id="cb5-6"><a href="#cb5-6"></a></span>
+<span id="cb5-7"><a href="#cb5-7"></a> <span class="co">//Entrada</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a> entrada <span class="op">=</span> <span class="kw">new</span> <span class="bu">Scanner</span><span class="op">(</span><span class="bu">System</span><span class="op">.</span><span class="fu">in</span><span class="op">);</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a> base   <span class="op">=</span> entrada<span class="op">.</span><span class="fu">nextFloat</span><span class="op">();</span></span>
+<span id="cb5-10"><a href="#cb5-10"></a> altura <span class="op">=</span> entrada<span class="op">.</span><span class="fu">nextFloat</span><span class="op">();</span></span>
+<span id="cb5-11"><a href="#cb5-11"></a></span>
+<span id="cb5-12"><a href="#cb5-12"></a> <span class="co">//Processamento</span></span>
+<span id="cb5-13"><a href="#cb5-13"></a> <span class="co">// highlight-start</span></span>
+<span id="cb5-14"><a href="#cb5-14"></a> <span class="op">{</span> <span class="co">// Cálculo da área  &lt;-- Início do bloco</span></span>
+<span id="cb5-15"><a href="#cb5-15"></a>     </span>
+<span id="cb5-16"><a href="#cb5-16"></a>     area <span class="op">=</span> base <span class="op">*</span> altura<span class="op">;</span></span>
+<span id="cb5-17"><a href="#cb5-17"></a> <span class="op">}</span>                   <span class="co">//&lt;-- Término do bloco</span></span>
+<span id="cb5-18"><a href="#cb5-18"></a> <span class="co">// highlight-end</span></span>
+<span id="cb5-19"><a href="#cb5-19"></a></span>
+<span id="cb5-20"><a href="#cb5-20"></a> <span class="co">// highlight-start</span></span>
+<span id="cb5-21"><a href="#cb5-21"></a> <span class="op">{</span> <span class="co">// Cálculo da área  &lt;-- Início do bloco</span></span>
+<span id="cb5-22"><a href="#cb5-22"></a>     </span>
+<span id="cb5-23"><a href="#cb5-23"></a>     perimetro <span class="op">=</span> <span class="op">(</span>base <span class="op">+</span> altura<span class="op">)*</span><span class="dv">2</span><span class="op">;</span></span>
+<span id="cb5-24"><a href="#cb5-24"></a> <span class="op">}</span>                   <span class="co">//&lt;-- Término do bloco</span></span>
+<span id="cb5-25"><a href="#cb5-25"></a> <span class="co">// highlight-end</span></span>
+<span id="cb5-26"><a href="#cb5-26"></a></span>
+<span id="cb5-27"><a href="#cb5-27"></a> <span class="co">//Saída</span></span>
+<span id="cb5-28"><a href="#cb5-28"></a> <span class="bu">System</span><span class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">printf</span><span class="op">(</span><span class="st">"Área     : </span><span class="sc">%f</span><span class="st">"</span><span class="op">,</span> area<span class="op">);</span></span>
+<span id="cb5-29"><a href="#cb5-29"></a> <span class="bu">System</span><span class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">printf</span><span class="op">(</span><span class="st">"Perímetro: </span><span class="sc">%f</span><span class="st">"</span><span class="op">,</span> perimetro<span class="op">);</span></span>
+<span id="cb5-30"><a href="#cb5-30"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-2-3">
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>  <span class="co"># Variáveis e entrada</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>  base   <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"Base: "</span>))</span>
+<span id="cb6-3"><a href="#cb6-3"></a>  altura <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"Base: "</span>))</span>
+<span id="cb6-4"><a href="#cb6-4"></a></span>
+<span id="cb6-5"><a href="#cb6-5"></a>  <span class="co"># Processamento</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a>  area <span class="op">=</span> base<span class="op">*</span>altura </span>
+<span id="cb6-7"><a href="#cb6-7"></a>  perimetro <span class="op">=</span> (base<span class="op">+</span>altura<span class="op">*</span><span class="dv">2</span>)</span>
+<span id="cb6-8"><a href="#cb6-8"></a></span>
+<span id="cb6-9"><a href="#cb6-9"></a>  <span class="co"># Saída</span></span>
+<span id="cb6-10"><a href="#cb6-10"></a>  <span class="bu">print</span>(<span class="st">"Área     : "</span>, area)</span>
+<span id="cb6-11"><a href="#cb6-11"></a>  <span class="bu">print</span>(<span class="st">"Perímetro:"</span>, perimetro)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 </section>
 <section class="slide level2">
 
-<ol type="1">
-<li>Pergunte um número ao usuário, e em seguida mostre a raiz quadrada e a raiz cúbica desse número.</li>
-</ol>
+<p>Utilizando a representação de algoritmos utilizando fluxogramas, o uso dos blocos se torna mais intuitivo.</p>
 </section>
 <section class="slide level2">
 
-<ol type="1">
-<li>Escreva um programa que pergunte a quantidade de km percorridos por um carro alugado pelo usuário, assim como a quantidade de dias pelos quais o carro foi alugado. Calcule o preço a pagar, sabendo que o carro custa R\$ 60,00 por dia e R\$ 0,15 por km rodado.<br>
-(Fonte: MENEZES 2019, pg. 72)</li>
-</ol>
+<p><strong>Exemplo</strong><br>
+- Representação do cálculo da área e perímetro do retângulo utilizando fluxograma.</p>
 </section>
 <section class="slide level2">
 
-<ol type="1">
-<li>Escreva um programa para ler as dimensões de um retângulo, com o tamanho da base (<span class="math inline">\(b\)</span>) e da altura (<span class="math inline">\(h\)</span>). Calcule o mostre o perímetro (<span class="math inline">\(p\)</span>) e área (<span class="math inline">\(a\)</span>) desse retângulo. <span class="math display">\[
-p = 2(b+h)\\
-a = bh
-\]</span></li>
-</ol>
-</section>
-<section class="slide level2">
+<div class="cell" data-reveal="true">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart TD
+    inicio(Inicio)
+    subgraph Variáveis a serem utilizadas
+    variaveis["
+      real: base, altura;
+      real: area, perimetro;
+      "]
+    end
+    subgraph "Processamento"
+      subgraph "Cálculo da área"
+        area["
+        area ← base * altura;
+        "]
+      end
+      subgraph "Cálculo do perímetro"
+        perimetro["
+        perimetro ← (base+altura)*2;
+        "]
+      end
+    end
+    fim(Fim)
+    inicio --&gt; variaveis --&gt; area --&gt; perimetro --&gt; fim
 
-<ol type="1">
-<li>Pergunte ao usuário o valor do raio (<span class="math inline">\(r\)</span>) de um círculo, e em seguida mostre o perímetro (<span class="math inline">\(p\)</span>) e a área (<span class="math inline">\(a\)</span>) desse círculo. <span class="math display">\[
-p = 2\pi r\\
-a = \pi r^2
-\]</span></li>
-</ol>
-</section>
-<section class="slide level2">
+    style area color:#66f
+    style perimetro color:#66f
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
 
-<ol type="1">
-<li>Faça um algoritmo que leia três notas (<span class="math inline">\(N_1\)</span>, <span class="math inline">\(N_2\)</span> e <span class="math inline">\(N_3\)</span>) de um aluno, calcule e escreva a média final deste aluno. Considerar que a média (<span class="math inline">\(M\)</span>) é ponderada e que o peso das notas é 2, 3 e 5. A equação para o cálculo da média final é: <span class="math display">\[
-M = \frac{N_1 \times 2 + N_2 \times 3 + N_3 \times 5}{2+3+5}
-\]</span><br>
-(Fonte: CARVALHO, 2007)</li>
-</ol>
-</section>
-<section class="slide level2">
+</div>
+<p></p>
+</div>
+</div>
+</div>
 
-<ol type="1">
-<li>Faça um programa que solicite o preço de uma mercadoria e o percentual de desconto. Exiba o valor do desconto e o preço a pagar.<br>
-(Fonte: MENEZES 2019, pg. 72)</li>
-</ol>
-</section>
-<section class="slide level2">
-
-<ol type="1">
-<li>Faça um programa que calcule o aumento de um salário. Ele deve solicitar o valor do salário e a porcentagem de aumento. Exiba o valor do aumento e do novo salário.<br>
-(Fonte: MENEZES 2019, pg. 72)</li>
-</ol>
-</section>
-<section class="slide level2">
-
-<ol type="1">
-<li>Peça ao usuário que informe o valor de um boleto, o percentual de juros cobrado e o número de dias em atraso. O programa deve calcular o valor total a ser pago, utilizando a fórmula<br>
-<span class="math display">\[
-Total = Valor + Valor \times \frac{Juros}{100} \times Dias
-\]</span><br>
-(Adaptado de LOPES, 2011)</li>
-</ol>
-</section>
-<section class="slide level2">
-
-<ol type="1">
-<li>Considere que houve uma eleição, na qual três candidatos concorreram (<span class="math inline">\(C_a\)</span>, <span class="math inline">\(C_b\)</span> e <span class="math inline">\(C_c\)</span>). O usuário deve informar quantos votos cada candidato recebeu e quantidade de votos brancos e nulos. O programa deve calcular e mostrar a quantidade total de eleitores, o percentual de votos que cada candidato recebeu, o percentual de votos brancos e o percentual de votos nulos. O cálculo dos percentuais é dado em relação ao total de votos da eleição.<br>
-(Adaptado de LOPES, 2011)</li>
-</ol>
-</section>
-<section class="slide level2">
-
-<ol type="1">
-<li>O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro, calcular e escrever o custo final ao consumidor.<br>
-(Fonte: CARVALHO, 2007)</li>
-</ol>
-</section>
-<section class="slide level2">
-
-<ol type="1">
-<li>Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês, mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de suas vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do vendedor.<br>
-(Fonte: CARVALHO, 2007).</li>
-</ol>
-</section>
-<section id="exercícios-externos" class="slide level2">
-<h2>Exercícios externos</h2>
-<h3 id="beecrowd">Beecrowd</h3>
-<ol type="1">
-<li><a href="https://www.beecrowd.com.br/judge/pt/problems/view/1003">Beecrowd 1003 - Soma Simples</a></li>
-<li><a href="https://www.beecrowd.com.br/judge/pt/problems/view/1004">Beecrowd 1004 - Produto Simples</a></li>
-<li><a href="https://www.beecrowd.com.br/judge/pt/problems/view/1007">Beecrowd 1007 - Diferença</a></li>
-<li><a href="https://www.beecrowd.com.br/judge/pt/problems/view/3055">Beecrowd 3055 - Nota Esquecida</a></li>
-<li><a href="https://www.beecrowd.com.br/judge/pt/problems/view/2786">Beecrowd 2786 - Piso da Escola</a></li>
-<li><a href="https://www.beecrowd.com.br/judge/pt/problems/view/1021">Beecrowd 1021 - Notas e Moedas</a></li>
-</ol>
-</section>
-<section id="referências" class="slide level2">
-<h2>Referências</h2>
-<p>MENEZES, N. N. C. Introdução à programação com Python: algoritmos e lógica de programação para iniciantes. 3.ed. São Paulo: Novatec, 2019.</p>
-<p><strong>Outras referências</strong></p>
-<p><a href="https://fit.faccat.br/~fpereira/apostilas/exerc_resp_alg_mar2007.pdf">CARVALHO, F.P. Lógica de programação - Algoritmos: Notas de aula. FIT. Taquara, 2007</a><br>
-<a href="http://docente.ifrn.edu.br/abrahaolopes/semestre-2012.1/1.2411.1v-fundamentos-de-logica-e-algoritmos/lista-de-exercicios-2-operadores-matematicos/at_download/file">LOPES, A. Algoritmos: Notas de aula. Mossoró: IFRN, 2011</a></p>
 <div class="footer footer-default">
 
 </div>
@@ -600,19 +622,19 @@ Total = Valor + Valor \times \frac{Juros}{100} \times Dias
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="exercicios_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="exercicios_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="exercicios_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="exercicios_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="exercicios_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="exercicios_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="exercicios_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="exercicios_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="exercicios_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="exercicios_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
